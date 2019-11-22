@@ -1,0 +1,112 @@
+.image-holder {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    height: 100vh;
+    width: 100vw;
+
+    .home-background-image {
+        animation-name: imageTransition;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: normal;
+        animation-duration: 10s;
+        min-width: 100%;
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        -webkit-background-size: 100%;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow: hidden;
+        display: flex;
+        z-index: -1;
+        justify-content: center;
+        align-items: center;
+
+
+        .home-background-image_name-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            font-size: 2rem;
+            opacity: 0.5;
+
+            .home_button {
+                background-color: none;
+                width: 9.5rem;
+                font-size: 1.5rem;
+                cursor: pointer;
+                box-shadow: 1px -2px black;
+                text-align: center;
+                border-radius: 10px;
+            }
+        }
+    }
+
+
+    .second-home-background-image {
+        background-image: url('https://images.unsplash.com/photo-1509130446053-899ae7358ce6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+        min-width: 100%;
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        -webkit-background-size: 100%;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow: hidden;
+        display: flex;
+        z-index: -1;
+        justify-content: center;
+        align-items: center;
+        backface-visibility: hidden;
+    }
+
+    .third-home-background-image {
+        background-image: url('../assets/The\ Watchers.jpg');
+        min-width: 100%;
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        -webkit-background-size: 100%;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow: hidden;
+        display: flex;
+        z-index: -1;
+        justify-content: center;
+        align-items: flex-end;
+        backface-visibility: hidden;
+
+
+        .footer-text {
+            display: flex;
+            justify-content: space-around;
+            text-decoration: none;
+            color: #FDE04C;
+        }
+    }
+
+
+}
+
+@keyframes imageTransition {
+    0% {
+        background-image: url('../assets/The\ Bird\ Call.jpg');
+
+    }
+
+    50% {
+        background-image: url('../assets/copy.jpg');
+    }
+
+    100% {
+        background-image: url('../assets/The\ Fall\ Off.jpg');
+    }
+}

@@ -1,0 +1,26 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+}
+
+.header {
+    z-index: 1;
+    position: absolute;
+    color: rgb(255, 224, 47);
+    width: 100%;
+    overflow: hidden;
+
+    .header-business {
+        width: 100%;
+    }
+
+    .header-routes {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+    }
+}
