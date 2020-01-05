@@ -1,29 +1,21 @@
 .image-holder {
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
     height: 100vh;
-    width: 100vw;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        'picture textHalf';
 
     .home-background-image {
-        animation-name: imageTransition;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-direction: normal;
-        animation-duration: 10s;
-        min-width: 100%;
-        min-height: 100vh;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        -webkit-background-size: 100%;
-        -moz-background-size: cover;
-        -o-background-size: cover;
+        grid-area: picture;
+        background: url('../assets//The\ True\ Colors\ Done.jpg') no-repeat center center;
         background-size: cover;
-        overflow: hidden;
+        // width: 100%;
+        // height: auto;
         display: flex;
-        z-index: -1;
         justify-content: center;
         align-items: center;
+
 
 
         .home-background-image_name-container {
@@ -33,80 +25,61 @@
             color: white;
             font-size: 2rem;
             opacity: 0.5;
-
-            .home_button {
-                background-color: none;
-                width: 9.5rem;
-                font-size: 1.5rem;
-                cursor: pointer;
-                box-shadow: 1px -2px black;
-                text-align: center;
-                border-radius: 10px;
-            }
         }
     }
 
 
     .second-home-background-image {
-        background-image: url('https://images.unsplash.com/photo-1509130446053-899ae7358ce6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
-        min-width: 100%;
-        min-height: 100vh;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        -webkit-background-size: 100%;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        grid-area: textHalf;
+        background-color: black;
         overflow: hidden;
         display: flex;
-        z-index: -1;
         justify-content: center;
         align-items: center;
-        backface-visibility: hidden;
-    }
 
-    .third-home-background-image {
-        background-image: url('../assets/The\ Watchers.jpg');
-        min-width: 100%;
-        min-height: 100vh;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        -webkit-background-size: 100%;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        overflow: hidden;
-        display: flex;
-        z-index: -1;
-        justify-content: center;
-        align-items: flex-end;
-        backface-visibility: hidden;
-
-
-        .footer-text {
+        .PageData {
+            z-index: 1;
+            color: rgb(255, 224, 47);
+            // overflow: hidden;
             display: flex;
-            justify-content: space-around;
-            text-decoration: none;
-            color: #FDE04C;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .Title {
+                letter-spacing: 3px;
+                cursor: pointer;
+
+                &:hover {
+                    transform: skewY(-2deg) skewX(-15deg) scale(1.1);
+                    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+                }
+
+                transition: all .2s;
+            }
+
+            .composition__photo {
+                width: 100px;
+                box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+                border-radius: .2rem;
+                position: absolute;
+                z-index: 10;
+                transition: all .2s;
+                outline-offset: 2rem;
+
+                &:hover {
+                    outline: 1.5rem solid #55c75a;
+                    transform: scale(1.05) translateY(-0.5rem);
+                    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.4);
+                    z-index: 20;
+                }
+            }
         }
-    }
 
 
-}
-
-@keyframes imageTransition {
-    0% {
-        background-image: url('../assets/The\ Bird\ Call.jpg');
 
     }
 
-    50% {
-        background-image: url('../assets/copy.jpg');
-    }
 
-    100% {
-        background-image: url('../assets/The\ Fall\ Off.jpg');
-    }
+
 }
