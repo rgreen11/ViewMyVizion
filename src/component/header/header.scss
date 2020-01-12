@@ -2,25 +2,40 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    position: relative;
+}
+
+.page_1 {
+    height: 100vh;
+    overflow: hidden;
+
+
+    .video_control {
+        height: 100%;
+        z-index: -1;
+    }
+
 
 }
 
 .header {
     z-index: 1;
-    position: absolute;
-    color: rgb(255, 224, 47);
     width: 100%;
     overflow: hidden;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.664);
 
     .header-business {
+        margin-top: 25%;
+        text-align: center;
         width: 100%;
+        color: rgb(255, 255, 255);
+
     }
 
-    .header-routes {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 50%;
+    .header-business-name {
+        text-decoration: underline;
+        letter-spacing: 10px;
     }
+
+
 }

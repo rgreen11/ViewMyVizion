@@ -6,7 +6,7 @@ import { Switch, Route } from 'react-router-dom';
 import './App.css';
 function App() {
   return (<>
-    {/* <Header /> */}
+
     <Switch>
       <Route path='/' component={Home} />
     </Switch>
