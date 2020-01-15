@@ -11,18 +11,10 @@ export default () => {
   const [stretch, setStretch] = useState(obj);
 
   function toggle(e) {
-    // if (!stretch[e.target.id]) {
-    //   setStretch((stretch[e.target.id] = !stretch[e.target.id]));
-    //   console.log(stretch, e.target);
-    // } else {
-    //   setStretch((stretch[e.target.id] = false));
-    // }
     let cpy = { ...stretch };
-    console.log(e.target);
 
     cpy[e.target.id] = !cpy[e.target.id];
     setStretch(cpy);
-    console.log(cpy);
   }
 
   return (
@@ -30,7 +22,9 @@ export default () => {
       <div className="panels">
         <div
           id="1"
-          className={`${stretch[1] ? "open open-active" : ""}  panel panel1 `}
+          className={`${
+            stretch[1] ? "open open-active" : ""
+          }  panel panel1 img-fluid`}
           onClick={e => toggle(e)}
         >
           <p id="1">Hey</p>
@@ -40,7 +34,9 @@ export default () => {
 
         <div
           id="2"
-          className={`${stretch[2] ? "open open-active" : ""}  panel panel2 `}
+          className={`${
+            stretch[2] ? "open open-active" : ""
+          }  panel panel2 img-fluid`}
           onClick={e => toggle(e)}
         >
           <p id="2">Give</p>
@@ -50,7 +46,9 @@ export default () => {
 
         <div
           id="3"
-          className={`${stretch[3] ? "open open-active" : ""}  panel panel3 `}
+          className={`${
+            stretch[3] ? "open open-active" : ""
+          }  panel panel3 img-fluid`}
           onClick={e => toggle(e)}
         >
           <p id="3">Experience</p>
@@ -60,7 +58,9 @@ export default () => {
 
         <div
           id="4"
-          className={`${stretch[4] ? "open open-active" : ""}  panel panel4 `}
+          className={`${
+            stretch[4] ? "open open-active" : ""
+          }  panel panel4 img-fluid`}
           onClick={e => toggle(e)}
         >
           <p id="4">Give</p>
@@ -70,22 +70,15 @@ export default () => {
 
         <div
           id="5"
-          className={`${stretch[5] ? "open open-active" : ""}  panel panel5 `}
+          className={`${
+            stretch[5] ? "open open-active" : ""
+          }  panel panel5 img-fluid`}
           onClick={e => toggle(e)}
         >
           <p id="5">Life</p>
           <p id="5">In</p>
           <p id="5">Motion</p>
         </div>
-      </div>
-      <div className="about_photo">
-        <h4>DOUBLE EXPOSURES</h4>
-        <p>
-          These double exposures are meant to express different elements of the
-          world we live in. With an array of portrait shots I have taken over
-          time, I tend to match the mood of the portrait with an element that
-          defines it. These type of creations are unlimited!
-        </p>
       </div>
     </div>
   );

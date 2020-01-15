@@ -1,0 +1,14 @@
+.contain_pics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        '. pics pics pics .';
+
+    .about_photo {
+        text-align: center;
+    }
+
+    .pics {
+        grid-area: pics;
+    }
+}

@@ -19,10 +19,6 @@ export default () => {
 
         <div className="second-home-background-image">
           <div className="PageData">
-            {/* <h1 className="Title">ViewMyViZion</h1> */}
-            {/* <img src={j} alt="fall" className="composition__photo" />
-          <img src={j} alt="fall" className="composition__photo-2" />
-          <img src={j} alt="fall" className="composition__photo-3" /> */}
             <p className="about_me container">
               <p>
                 {" "}

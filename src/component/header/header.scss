@@ -8,12 +8,16 @@ body {
     height: 100vh;
     overflow: hidden;
 
+    .info {
+        z-index: 20;
+        display: flex;
+        justify-content: space-evenly;
+    }
 
     .video_control {
         height: 100%;
         z-index: -1;
     }
-
 
 }
 

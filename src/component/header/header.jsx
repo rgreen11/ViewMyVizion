@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./header.scss";
 
 export default () => {
@@ -8,8 +9,20 @@ export default () => {
         <div className="header-business">
           <h1 className="header-business-name">ViewMyViZion</h1>
           <h3>Creativity and Innovation</h3>
+          <br />
+          <div className="info">
+            <Link to="/portfolio">
+              <h5> Portfolio</h5>
+            </Link>
+
+            <h5>Photography</h5>
+            <h5>Services</h5>
+            <h5>Contact</h5>
+          </div>
+          <br />
           <p> &#8595;</p>
         </div>
+        ]
       </header>
 
       <video
