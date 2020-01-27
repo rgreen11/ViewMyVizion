@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home.scss";
 import Header from "../component/header/header";
-// import j from "../assets/The Fall Off.jpg";
 import Portfolio from "../component/portfolio/portfolio";
 
 export default () => {

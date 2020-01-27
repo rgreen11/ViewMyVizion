@@ -18,3 +18,9 @@ function App() {
 }
 
 export default App;
+/*
+------THINGS TO FIX------
+ON PORTFOLIO PAGE
+IMAGES SHAKE ON HOVER
+ON LOAD IMAGES HAVE TO ADJUST TO OBJECCT FIT PROPERTY
+*/
