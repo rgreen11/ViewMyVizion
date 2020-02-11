@@ -14,15 +14,15 @@ export default () => {
             <Link to="/portfolio">
               <h5> Portfolio</h5>
             </Link>
-
-            <h5>Photography</h5>
+            <Link to="/photography">
+              <h5>Photography</h5>
+            </Link>
             <h5>Services</h5>
             <h5>Contact</h5>
           </div>
           <br />
           <p> &#8595;</p>
         </div>
-        ]
       </header>
 
       <video
