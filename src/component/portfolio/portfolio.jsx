@@ -12,7 +12,6 @@ export default () => {
 
   function toggle(e) {
     let cpy = { ...stretch };
-
     cpy[e.target.id] = !cpy[e.target.id];
     setStretch(cpy);
   }
