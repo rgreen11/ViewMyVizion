@@ -11,7 +11,9 @@ export default () => {
       <Link to="/photography">
         <h5>Photography</h5>
       </Link>
-      <h1>Services</h1>
+      <Link to="/Services">
+        <h5>Services</h5>
+      </Link>
       <h1>Contact</h1>
     </header>
   );

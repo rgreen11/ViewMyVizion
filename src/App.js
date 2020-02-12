@@ -4,7 +4,9 @@ import Header from './component/header/header';
 import { Switch, Route, HashRouter, withRouter } from 'react-router-dom';
 import Portfolio from './container/Portfolio/Portfolio';
 import Photography from './container/Photography/Photography';
+import Services from './container/Services/Services';
 import Navbar from './component/NavBar/Navbar';
+
 
 import './App.css';
 function App(props) {
@@ -15,6 +17,7 @@ function App(props) {
         <Route exact path='/' component={Home} />
         <Route exact path='/portfolio' component={Portfolio} />
         <Route exact path='/photography' component={Photography} />
+        <Route exact path='/services' component={Services} />
       </Switch>
     </HashRouter>
   </>
