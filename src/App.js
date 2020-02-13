@@ -6,7 +6,7 @@ import Portfolio from './container/Portfolio/Portfolio';
 import Photography from './container/Photography/Photography';
 import Services from './container/Services/Services';
 import Navbar from './component/NavBar/Navbar';
-
+import Footer from './component/Footer/Footer';
 
 import './App.css';
 function App(props) {
@@ -19,6 +19,7 @@ function App(props) {
         <Route exact path='/photography' component={Photography} />
         <Route exact path='/services' component={Services} />
       </Switch>
+      <Footer />
     </HashRouter>
   </>
   );
