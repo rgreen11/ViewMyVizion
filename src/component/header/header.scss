@@ -43,3 +43,21 @@ body {
 
 
 }
+
+@media screen and (max-width: 900px) {
+
+    .header-business-name {
+        text-decoration: underline;
+        letter-spacing: 4px;
+        font-size: 30px;
+    }
+
+    .header-business-name_2 {
+        font-size: 25px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+}

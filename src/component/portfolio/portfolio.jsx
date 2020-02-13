@@ -26,9 +26,7 @@ export default () => {
           }  panel panel1 img-fluid`}
           onClick={e => toggle(e)}
         >
-          <p id="1">Hey</p>
-          <p id="1">Let's</p>
-          <p id="1">Dance</p>
+          {/* <p id="1">Let's</p> */}
         </div>
 
         <div
@@ -38,9 +36,7 @@ export default () => {
           }  panel panel2 img-fluid`}
           onClick={e => toggle(e)}
         >
-          <p id="2">Give</p>
-          <p id="2">Take</p>
-          <p id="2">Receive</p>
+          {/* <p id="2">Take</p> */}
         </div>
 
         <div
@@ -50,9 +46,7 @@ export default () => {
           }  panel panel3 img-fluid`}
           onClick={e => toggle(e)}
         >
-          <p id="3">Experience</p>
-          <p id="3">It</p>
-          <p id="3">Today</p>
+          {/* <p id="3">It</p> */}
         </div>
 
         <div
@@ -62,9 +56,7 @@ export default () => {
           }  panel panel4 img-fluid`}
           onClick={e => toggle(e)}
         >
-          <p id="4">Give</p>
-          <p id="4">All</p>
-          <p id="4">You can</p>
+          {/* <p id="4">All</p> */}
         </div>
 
         <div
@@ -74,9 +66,7 @@ export default () => {
           }  panel panel5 img-fluid`}
           onClick={e => toggle(e)}
         >
-          <p id="5">Life</p>
-          <p id="5">In</p>
-          <p id="5">Motion</p>
+          {/* <p id="5">In</p> */}
         </div>
       </div>
     </div>

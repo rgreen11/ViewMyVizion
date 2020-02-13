@@ -8,7 +8,7 @@ export default () => {
       <header className="header">
         <div className="header-business">
           <h1 className="header-business-name">ViewMyViZion</h1>
-          <h3>Creativity and Innovation</h3>
+          <h3 className="header-business-name_2">Creativity and Innovation</h3>
           <br />
           <div className="info">
             <Link to="/portfolio">

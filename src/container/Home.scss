@@ -63,7 +63,36 @@
     }
 
 
+}
 
+
+@media screen and (max-width: 900px) {
+    .image-holder {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        .home-background-image {
+            grid-area: picture;
+            background: url('../assets//The\ True\ Colors\ Done.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+
+            .home-background-image_name-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: white;
+                font-size: 2rem;
+                opacity: 0.5;
+                height: 1000px;
+            }
+        }
+    }
 }
 
 // .composition__photo {
