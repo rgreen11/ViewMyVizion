@@ -40,6 +40,14 @@ export default () => {
           src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4"
           type="video/mp4"
         />
+        <source
+          src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.webm"
+          type="video/webm"
+        />
+        <source
+          src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.ogv"
+          type="video/ogg"
+        />
       </video>
     </div>
   );
