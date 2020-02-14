@@ -31,7 +31,7 @@ export default () => {
 
       <video
         className="video_control"
-        playsinline
+        playsinline="playsinline"
         autoplay="autoplay"
         muted="muted"
         loop="loop"
