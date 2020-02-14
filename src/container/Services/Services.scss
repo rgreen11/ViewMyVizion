@@ -33,3 +33,28 @@
         }
     }
 }
+
+@media screen and (max-width: 900px) {
+    .imgs {
+        display: flex;
+        margin-top: 2%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imgs_serv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        margin-top: 8%;
+
+        .ex_pick {
+            object-fit: cover;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+        }
+    }
+}
