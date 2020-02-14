@@ -41,13 +41,10 @@ export default () => {
           type="video/mp4"
         />
         <source
-          src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.webm"
+          src="http://www.mygreencity.in/Enquiry.webm"
           type="video/webm"
         />
-        <source
-          src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.ogv"
-          type="video/ogg"
-        />
+        <source src="http://www.mygreencity.in/Enquiry.ogv" type="video/ogg" />
       </video>
     </div>
   );
