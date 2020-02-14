@@ -41,11 +41,6 @@ export default () => {
           src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4"
           type="video/mp4"
         />
-        <source
-          src="http://www.mygreencity.in/Enquiry.webm"
-          type="video/webm"
-        />
-        <source src="http://www.mygreencity.in/Enquiry.ogv" type="video/ogg" />
       </video>
     </div>
   );
