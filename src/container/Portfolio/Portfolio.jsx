@@ -9,7 +9,7 @@ export default () => {
 
   return (
     <>
-      <div className="b">
+      <div className="mdl">
         <div className="center_content container">
           <div className="contain_pics">
             <img className="pics pic1" src={image4} alt="Responsive" />
