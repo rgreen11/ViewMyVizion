@@ -10,7 +10,7 @@ export default () => {
   return (
     <>
       <div className="b">
-        <div className="center_content container a">
+        <div className="center_content container">
           <div className="contain_pics">
             <img className="pics pic1" src={image4} alt="Responsive" />
             <img className="pics pic2" src={image3} alt="Responsive" />
